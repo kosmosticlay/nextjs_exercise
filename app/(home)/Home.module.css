@@ -1,30 +1,28 @@
-.filterForm {
-  width: 100%;
-  height: 50px;
-  background-color: var(--test2);
-}
-
 .categoryList {
   width: 100%;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
-  background-color: var(--gray);
 }
 
-.categoryList li {
+.categoryItem {
   height: 130px;
   background-color: var(--white);
   border-radius: 10px;
-  border-left: 10px solid var(--test2);
+  border-left: 10px solid var(--color-main);
   cursor: pointer;
   padding: 15px;
   color: var(--black);
+  transition: transform 0.3s ease;
 }
 
-.categoryList li:hover {
+.categoryItem:hover {
   box-shadow: 0 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.categoryItem:active {
+  transform: scale(0.9);
 }
 
 .categoryCard {
@@ -54,10 +52,10 @@
 }
 
 .monthly {
-  background-color: var(--test3);
+  background-color: var(--color-point2);
 }
 .weekly {
-  background-color: var(--test2);
+  background-color: var(--color-point1);
 }
 
 .updateInfo span:last-child {

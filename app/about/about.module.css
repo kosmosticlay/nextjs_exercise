@@ -1,14 +1,70 @@
-.wrapper {
-  height: calc(100vh - 150px);
+.titleWrapper {
+  position: relative;
+  font-family: var(--font-heading);
+}
+
+.backBtn {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-10%, -50%);
+  font-size: 1.5rem;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  color: var(--black);
+  border: 2px solid transparent;
+}
+
+.backBtn:hover {
+  border-bottom: 2px solid var(--black);
 }
 
 .title {
+  width: 100%;
   margin: 5px 0;
   padding: 20px 0;
   text-align: center;
   font-size: 2rem;
   font-family: var(--font-heading);
+  border-bottom: 1px solid var(--black);
+  margin-bottom: 20px;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  background-image: url("/images/kosmosticlay.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.profile::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--color-main);
+  translate: 5%;
+  z-index: -10;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
 }

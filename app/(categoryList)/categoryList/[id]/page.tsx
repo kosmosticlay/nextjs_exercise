@@ -4,7 +4,11 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CATEGORY_API_URL } from "../../../contants";
 
+/* styles */
 import styles from "./categoryList.module.css";
+
+/* icons */
+import { FaArrowLeft } from "react-icons/fa";
 
 interface IBuyLink {
   name: string;
@@ -52,9 +56,16 @@ export default function CategoryList({ params }) {
     </div>
   ) : (
     <div>
-      <h1 className={styles.categoryName}>
-        {title} {numOfBooks ? `(${numOfBooks} books)` : null}
-      </h1>
+      <div className={styles.categoryHeader}>
+        <Link href={"/"} className={styles.backBtn}>
+          <FaArrowLeft />
+          {"Back"}
+        </Link>
+        <h1 className={styles.categoryName}>
+          {title} {numOfBooks ? `(${numOfBooks} books)` : null}
+        </h1>
+      </div>
+
       <ul className={styles.bookList}>
         {books?.map((bookItem: IBookItem, index: number) => (
           <li
@@ -113,6 +124,8 @@ export default function CategoryList({ params }) {
                 </p>
                 <div className={styles.buyLinkList}>
                   <Link
+                    title="Amazon"
+                    aria-label="Amazon"
                     className={`${styles.buyLink} ${styles.buyLink_amazon}`}
                     href={
                       bookItem.buy_links.find((link) => link.name === "Amazon")
@@ -122,6 +135,8 @@ export default function CategoryList({ params }) {
                     rel="noopener noreferrer"
                   ></Link>
                   <Link
+                    title="Apple Books"
+                    aria-label="Apple Books"
                     className={`${styles.buyLink} ${styles.buyLink_appleBooks}`}
                     href={
                       bookItem.buy_links.find(
@@ -132,6 +147,8 @@ export default function CategoryList({ params }) {
                     rel="noopener noreferrer"
                   ></Link>
                   <Link
+                    title="Barnes and Noble"
+                    aria-label="Barnes and Noble"
                     className={`${styles.buyLink} ${styles.buyLink_barnes}`}
                     href={
                       bookItem.buy_links.find(
@@ -142,6 +159,8 @@ export default function CategoryList({ params }) {
                     rel="noopener noreferrer"
                   ></Link>
                   <Link
+                    title="Books A Million"
+                    aria-label="Books A Million"
                     className={`${styles.buyLink} ${styles.buyLink_booksAMillion}`}
                     href={
                       bookItem.buy_links.find(

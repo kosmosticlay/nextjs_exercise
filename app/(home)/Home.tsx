@@ -3,6 +3,7 @@
 import styles from "./Home.module.css";
 import { FaRegCalendar } from "react-icons/fa";
 import Link from "next/link";
+import Header from "../../components/Header";
 
 interface IListItem {
   list_name: string;
@@ -20,7 +21,7 @@ export default function HomePage({
 }) {
   return (
     <div>
-      <form className={styles.filterForm}></form>
+      <Header />
       <ul className={styles.categoryList}>
         {initialLists.map((item) => (
           <li

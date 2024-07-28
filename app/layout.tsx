@@ -3,6 +3,7 @@ import "./styles/reset.css";
 import globalStyles from "./styles/global.module.css";
 
 import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 
 export const metadata = {
   title: "Next.js",
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={globalStyles.bodyWrapper}>
-        <Header />
+        <Navigation />
         {children}
       </body>
     </html>
