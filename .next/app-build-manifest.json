@@ -1,16 +1,10 @@
 {
   "pages": {
-    "/(home)/page": [
+    "/(categoryList)/categoryList/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(home)/page.css",
-      "static/chunks/app/(home)/page.js"
-    ],
-    "/(home)/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(home)/loading.css",
-      "static/chunks/app/(home)/loading.js"
+      "static/css/app/(categoryList)/categoryList/[id]/page.css",
+      "static/chunks/app/(categoryList)/categoryList/[id]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -24,22 +18,23 @@
       "static/css/app/not-found.css",
       "static/chunks/app/not-found.js"
     ],
-    "/(categoryList)/categoryList/[id]/page": [
+    "/(home)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(categoryList)/categoryList/[id]/page.css",
-      "static/chunks/app/(categoryList)/categoryList/[id]/page.js"
+      "static/css/app/(home)/page.css",
+      "static/chunks/app/(home)/page.js"
+    ],
+    "/(home)/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(home)/loading.css",
+      "static/chunks/app/(home)/loading.js"
     ],
     "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/about/page.css",
       "static/chunks/app/about/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

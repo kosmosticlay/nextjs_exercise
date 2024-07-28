@@ -116,8 +116,8 @@ export default function CategoryList({ params }) {
                 <p className={styles.description}>
                   {bookItem.description
                     ? `"${
-                        bookItem.description.length > 150
-                          ? bookItem.description.slice(0, 147) + "..."
+                        bookItem.description.length > 100
+                          ? bookItem.description.slice(0, 97) + "..."
                           : bookItem.description
                       }"`
                     : null}

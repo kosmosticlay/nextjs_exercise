@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+
+/* styles */
 import styles from "./styles/not-found.module.css";
 
 export default function NotFound() {

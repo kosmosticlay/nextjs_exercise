@@ -1,4 +1,6 @@
 import Link from "next/link";
+
+/* styles */
 import styles from "./Navigation.module.css";
 
 /* icons */

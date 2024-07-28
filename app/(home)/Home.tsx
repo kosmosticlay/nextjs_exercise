@@ -1,9 +1,13 @@
 "use client";
 
-import styles from "./Home.module.css";
-import { FaRegCalendar } from "react-icons/fa";
 import Link from "next/link";
 import Header from "../../components/Header";
+
+/* styles */
+import styles from "./Home.module.css";
+
+/* icons */
+import { FaRegCalendar } from "react-icons/fa";
 
 interface IListItem {
   list_name: string;
