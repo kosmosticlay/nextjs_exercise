@@ -1,0 +1,15 @@
+:root {
+  /* colors */
+  --background-color: black;
+  --heading1: #290907;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #f1f0ec;
+  --test: #d0d5ce;
+  --test2: #73a1b2;
+  --test3: #6e8658;
+
+  /* fonts */
+  --font-heading: "Abril Fatface", serif;
+  --font-italic: "Edu AU VIC WA NT Hand", cursive;
+}

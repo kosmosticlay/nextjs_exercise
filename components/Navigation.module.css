@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--black);
+}

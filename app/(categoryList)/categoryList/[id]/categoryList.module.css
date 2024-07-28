@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap");
+
+.loading {
+  height: calc(100vh - 150px);
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryName {
+  margin: 5px 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-heading);
+}
+
+.bookList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--gray);
+  border-top: 1px solid var(--black);
+}
+
+.bookItem {
+  height: 250px;
+  padding: 15px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  position: relative;
+}
+
+.bookItem_left {
+  display: flex;
+}
+
+.rank {
+  width: 50px;
+  height: 100%;
+  padding-top: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: var(--test2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rank_change {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.rank_change span {
+  margin-top: 5px;
+}
+
+.rank_higher {
+  color: #7e2f2f;
+}
+.rank_lower {
+  color: #2b5198;
+}
+
+.bookItem_left img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.bookItem_right {
+  position: relative;
+  padding: 5px 0;
+}
+
+.bookItem_right h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.bookItem_right span {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.description {
+  margin: 15px 0;
+  font-family: var(--font-italic);
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.buyLinkList {
+  position: absolute;
+  bottom: 0;
+}
+
+.buyLink {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.buyLink_amazon {
+  background-image: url("/images/logo_amazon.png");
+}
+
+.buyLink_appleBooks {
+  background-image: url("/images/logo_appleBooks.jpeg");
+}
+
+.buyLink_barnes {
+  background-image: url("/images/logo_barnes.png");
+}
+
+.buyLink_booksAMillion {
+  background-image: url("/images/logo_booksAMillion.png");
+}
